@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="228d2074-d53b-4c37-b103-f41fc67713f4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/ApiPoloRumble/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/composer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/ApiPoloRumble/vendor/doctrine/data-fixtures" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2RsJICFMpUPrbyrh1WEo4qOqs55" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/admin-22588/PhpstormProjects/APIJWT",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "web.server",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin-22588\PhpstormProjects\apirumble\config\jwt" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin-22588\PhpstormProjects\apirumble\ApiPoloRumble\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="228d2074-d53b-4c37-b103-f41fc67713f4" name="Changes" comment="" />
+      <created>1688032772856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688032772856</updated>
+      <workItem from="1688033183458" duration="16039000" />
+      <workItem from="1688415315391" duration="12229000" />
+      <workItem from="1688716190904" duration="9361000" />
+      <workItem from="1689059980004" duration="1198000" />
+      <workItem from="1689075448675" duration="1700000" />
+      <workItem from="1689890590804" duration="615000" />
+      <workItem from="1690184930648" duration="9261000" />
+      <workItem from="1690283999996" duration="3219000" />
+      <workItem from="1690444299001" duration="6052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
