@@ -9,8 +9,9 @@
             <mapping deploy="/webapps/Polo-APICOVOITFOLLE" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath path="/webapps/Polo-APICOVOITFOLLE/var2" />
-            <excludedPath path="/webapps/Polo-APICOVOITFOLLE/vendor2" />
+            <excludedPath path="/webapps/Polo-APICOVOITFOLLE/var" />
+            <excludedPath path="/webapps/Polo-APICOVOITFOLLE/vendor" />
+            <excludedPath path="/webapps/Polo-APICOVOITFOLLE/bin" />
           </excludedPaths>
         </serverdata>
       </paths>

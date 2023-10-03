@@ -5,25 +5,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="228d2074-d53b-4c37-b103-f41fc67713f4" name="Changes" comment="v1">
-      <change afterPath="$PROJECT_DIR$/src/Controller/PatchUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserPostsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Events/UserChangeEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4ca3c613-e07f-4efd-8eb4-7d5c98bd5632.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/4ca3c613-e07f-4efd-8eb4-7d5c98bd5632/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applicant" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/api_platform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/mercure.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230904132151.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230904182939.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230905171955.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230906193903.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230906194039.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230906194139.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230912153100.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230918075716.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230918134043.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231002101124.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20231002103205.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/perma/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/perma/ppdefault.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e74f602eeaa_renard6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e885f8c9805_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e88664a8a40_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e887a7f1720_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e887f5a1dab_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e887fed8acd_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e88aabb4724_skin6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e88aabb50f9_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e88e6e10e03_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64e891b4c9d4a_poulet1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ec954e88277_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ec954e88867_poulet4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ec954e88cbc_requin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ec954e8900a_requin2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ecb58352532_renard6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ecce0ca8741_poulet5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece33c42c88_renard4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece356b11f0_moutons6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece42df2a8f_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece42e622e8_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece42e68fb3_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64ece42eb1525_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64edbaab7ac0b_requin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64edc1edebf50_poulet2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64f19818b9207_alex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64f5da24681e2_poulet3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64f5e5e57be64_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/posts/64f5e8dd77814_requin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e3aa619f63f_shawn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e3ab9815681_shawn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e4a1d32b153_poulet4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e72a7234ad1_moutons4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e7494a92ee5_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e74e90206cd_poulacho alexandre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e86e610cc77_renard4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e87cdfb6307_renard5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8802dcae31_poulacho alexandre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8804c84dcd_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e88061e8d57_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e880bb15f28_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e88ae20378a_renard4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e88ee882714_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e88ffcd24d8_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8a4645cb4d_poulet2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8a833180d3_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8ab9e2673d_poulet4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8ae4591edf_requin2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8afd625d98_poulet4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8b10ecbfa4_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8b3c14e562_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64e8b6e8a1174_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec4e9f3877e_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec500ee1496_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec5050aaf64_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec509b49d71_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec50a561a2d_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec51397f7c9_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec51531c50a_renard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec52564bfb1_requin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec528879284_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec52ed350a2_renard5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec5316338fe_poulet5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec532429ecd_poulet6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec7c497cb85_renard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec81d0a4995_poulet3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec9e49cb9b7_potifilou.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ec9e8fbf960_renard5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64ecb53f526c5_potifilou.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64f06a9783fb8_poulet4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64f197dbdc64a_poulet5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64f197f613948_php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64f62f4694373_poulet5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profiles/64f63a7591080_renard5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/room" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiResource/JwtDecorator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BlockMultipleReviewOnATrade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CreateImageActionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CreateRoomController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GetAllCommentsFromPostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GetImagesByPostIdRangeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MarkMessagesAsReadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PatchTradeStatutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PatchUserProfilePictureController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PostImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PostLikeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserReviewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserRoomController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserTradeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PostComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PostCommentLike.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PostImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Room.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Trade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/UserReview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Events/CreateTradeEventListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Events/CreatingRoomVerification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Events/MessageEventSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Events/MessageUpdatingRoomListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ConversationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MessageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ParticipantsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostCommentLikeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostCommentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostImageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/RoomRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TradeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserReviewRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Serializer/MediaObjectNormalizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/MercureNotifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statut" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/create_image_action/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/create_user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/get_images_by_post_id_range/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patch_user_profile_picture/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_like/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/apitest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userPostOwner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20230724114427.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20230912153011.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CreateUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CreateUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserPostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserPostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/JWTEventListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/JWTEventListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/UserChangeEventListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/UserChangeEventListener.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +352,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -260,12 +405,45 @@
       <workItem from="1692862870646" duration="13490000" />
       <workItem from="1692949001552" duration="12977000" />
       <workItem from="1692982098065" duration="528000" />
-      <workItem from="1693207795592" duration="4630000" />
+      <workItem from="1693207795592" duration="5138000" />
+      <workItem from="1693294440223" duration="3761000" />
+      <workItem from="1693466802596" duration="18113000" />
+      <workItem from="1693826074425" duration="23861000" />
+      <workItem from="1694087959356" duration="14985000" />
+      <workItem from="1694434786960" duration="2375000" />
+      <workItem from="1694683322519" duration="1559000" />
+      <workItem from="1695022378697" duration="20089000" />
+      <workItem from="1695281166862" duration="395000" />
+      <workItem from="1695281834327" duration="3719000" />
+      <workItem from="1695307253433" duration="1970000" />
+      <workItem from="1695625845479" duration="10118000" />
+      <workItem from="1695885432120" duration="2073000" />
+      <workItem from="1695908324673" duration="4185000" />
+      <workItem from="1696231911986" duration="20327000" />
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <created>1693247577947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693247577947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1" />

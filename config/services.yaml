@@ -30,7 +30,33 @@ services:
 
   App\Events\UserChangeEventListener:
     tags:
+      - { name: 'doctrine.orm.entity_listener', event: 'postUpdate', entity: 'App\Entity\User', method: 'postUpdate' }
+      - { name: 'doctrine.orm.entity_listener', event: 'postPersist', entity: 'App\Entity\User', method: 'postPersist' }
+
+  App\Events\CreateTradeEventListener:
+    tags:
       - # these are the options required to define the entity listener
         name: 'doctrine.orm.entity_listener'
-        event: 'postUpdate'
-        entity: 'App\Entity\User'
+        event: 'postPersist'
+        entity: 'App\Entity\Trade'
+
+  App\Events\MessageUpdatingRoomListener:
+    tags:
+      - # these are the options required to define the entity listener
+        name: 'doctrine.orm.entity_listener'
+        event: 'prePersist'
+        entity: 'App\Entity\Message'
+
+  App\Events\MessageEventSubscriber:
+    tags:
+      - # these are the options required to define the entity listener
+        name: 'doctrine.orm.entity_listener'
+        event: 'postPersist'
+        entity: 'App\Entity\Message'
+
+  App\Events\CreatingRoomVerification:
+    tags:
+      - # these are the options required to define the entity listener
+        name: 'doctrine.orm.entity_listener'
+        event: 'prePersist'
+        entity: 'App\Entity\Room'

@@ -20,12 +20,14 @@ class CreateUserController extends AbstractController
         // Gestion de l'envoi d'image
         if ($request->files->has('pictureFile')) {
             $user->setPictureFile($request->files->get('pictureFile'));
-        } else {
-            $user->setPictureUrl($request->server->get('BASE_URL') . '/images/perma/ppdefault.png');
         }
         if (isset($data['username'])) {
             $user->setUsername($data['username']);
         }
+        $em->persist($user);
+        $em->flush();
+
         return $user;
+
     }
 }

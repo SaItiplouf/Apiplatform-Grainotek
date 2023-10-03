@@ -13,6 +13,10 @@ use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use App\Controller\PatchUserController;
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -40,26 +44,31 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
             openapiContext: [
                 'summary' => 'Mettre à jour la photo de profil de l\'utilisateur',
                 'description' => "Permet de mettre à jour certains champs de l'utilisateur",
-            ],
-            openapi: new Model\Operation(
-                requestBody: new Model\RequestBody(
-                    content: new ArrayObject([
+                'requestBody' => [
+                    'description' => 'Picture to be uploaded',
+                    'content' => [
                         'multipart/form-data' => [
                             'schema' => [
                                 'type' => 'object',
                                 'properties' => [
                                     'pictureFile' => [
-                                        "type" => "string",
-                                        "format" => "binary",
-                                        "description" => "Fichier image"
-                                    ],
-                                    'required' => 'pictureFile'
-                                ],
+                                        'type' => 'string',
+                                        'format' => 'binary'
+                                    ]
+                                ]
                             ]
                         ]
-                    ])
-                )
-            ),
+                    ]
+                ],
+                'responses' => [
+                    '200' => [
+                        'description' => 'User profile picture updated successfully'
+                    ],
+                    '400' => [
+                        'description' => 'Bad request, no picture provided'
+                    ]
+                ]
+            ],
             deserialize: false
         ),
         new Post(
@@ -127,27 +136,27 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['read:User', 'read:Post'])]
+    #[Groups(['read:User', 'write:User', 'comment:write', 'like:write', "like:read", 'comment:read', 'trade:read', 'read:Post', 'read:Room', 'read:Message', 'trade:write', 'write:Room', 'read:Review', 'write:Review'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 180, unique: true)]
-    #[Groups(['read:User', 'write:User', 'read:Post', 'read:Patch', 'write:Patch'])]
+    #[Groups(['read:User', 'comment:read', "like:read", "like:write", 'comment:write', 'trade:read', 'read:Message', 'read:Room', 'write:User', 'read:Post', 'read:Patch', 'write:Patch', 'trade:write', 'write:Room', 'read:Review', 'write:Review'])]
     private ?string $email = null;
 
     #[ORM\Column]
-    #[Groups(['read:User', 'read:Patch', 'write:Patch'])]
-    private array $roles = [];
+    #[Groups(['read:User', 'read:Patch', 'read:Room'])]
+    private array $roles = ["ROLE_USER"];
 
     /**
      * @var string The hashed password
      */
     #[ORM\Column]
-    #[Groups(['write:User', 'write:Patch', 'read:Patch'])]
+    #[Groups(['write:User', 'write:Patch'])]
     private ?string $password = null;
 
 
     #[ORM\Column(length: 255, nullable: true)]
-    #[Groups(['read:User'])]
+    #[Groups(['read:User', 'read:Message'])]
     private ?string $picture = null;
 
     #[Vich\UploadableField(mapping: "profile_picture", fileNameProperty: "picture")]
@@ -155,15 +164,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $pictureFile;
 
     #[ORM\Column(length: 255, unique: true, nullable: true)]
-    #[Groups(['write:User', 'create:User', 'read:User', 'read:Patch', 'write:Patch'])]
+    #[Groups(['write:User', 'trade:read', "like:read", "like:write", 'comment:write', 'comment:read', 'read:Message', 'read:Room', 'create:User', 'read:User', 'read:Patch', 'write:Patch', 'trade:write', 'write:Room', 'read:Review', 'write:Review'])]
     private ?string $username = null;
 
     #[ORM\Column(type: "datetime", nullable: true)]
     private ?\DateTimeInterface $updatedAt = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    #[Groups(['read:User'])]
+    #[Groups(['read:User', 'trade:read', 'comment:write', "like:read", 'comment:read', 'read:Message', 'read:Room', 'read:Post', 'read:Trade', 'trade:write', 'write:Room', 'read:Review', 'write:Review'])]
     private ?string $pictureUrl = null;
+
+    #[ORM\OneToMany(mappedBy: 'applicant', targetEntity: Trade::class)]
+    private Collection $trades;
+
+    #[ORM\ManyToMany(targetEntity: Room::class, mappedBy: 'users')]
+    private Collection $rooms;
+
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: UserReview::class, orphanRemoval: true)]
+    #[Groups(['read:Post'])]
+    private Collection $userReviews;
+    #[ORM\OneToMany(mappedBy: 'targetedUser', targetEntity: UserReview::class, orphanRemoval: true)]
+    #[Groups(['read:Post'])]
+    private Collection $userReviewsWhereUserIsTargeted;
+
+    public function __construct()
+    {
+        $this->trades = new ArrayCollection();
+        $this->rooms = new ArrayCollection();
+        $this->userReviews = new ArrayCollection();
+        $this->userReviewsWhereUserIsTargeted = new ArrayCollection();
+    }
 
     /**
      * @return string|null
@@ -303,4 +333,106 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
+    /**
+     * @return Collection<int, Trade>
+     */
+    public function getTrades(): Collection
+    {
+        return $this->trades;
+    }
+
+    public function addTrade(Trade $trade): static
+    {
+        if (!$this->trades->contains($trade)) {
+            $this->trades->add($trade);
+            $trade->setApplicant($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTrade(Trade $trade): static
+    {
+        if ($this->trades->removeElement($trade)) {
+            // set the owning side to null (unless already changed)
+            if ($trade->getApplicant() === $this) {
+                $trade->setApplicant(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Room>
+     */
+    public function getRooms(): Collection
+    {
+        return $this->rooms;
+    }
+
+    public function addRoom(Room $room): static
+    {
+        if (!$this->rooms->contains($room)) {
+            $this->rooms->add($room);
+            $room->addUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRoom(Room $room): static
+    {
+        if ($this->rooms->removeElement($room)) {
+            $room->removeUser($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, UserReview>
+     */
+    public function getUserReviewsWhereUserIsTargeted(): Collection
+    {
+        $targetedUserReviews = new ArrayCollection();
+
+        foreach ($this->userReviewsWhereUserIsTargeted as $userReview) {
+            $targetedUserReviews->add($userReview);
+        }
+
+        return $targetedUserReviews;
+    }
+
+    /**
+     * @return Collection<int, UserReview>
+     */
+    public function getUserReviews(): Collection
+    {
+        return $this->userReviews;
+    }
+
+    public function addUserReview(UserReview $userReview): static
+    {
+        if (!$this->userReviews->contains($userReview)) {
+            $this->userReviews->add($userReview);
+            $userReview->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUserReview(UserReview $userReview): static
+    {
+        if ($this->userReviews->removeElement($userReview)) {
+            // set the owning side to null (unless already changed)
+            if ($userReview->getUser() === $this) {
+                $userReview->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
 }
