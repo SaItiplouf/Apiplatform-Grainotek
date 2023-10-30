@@ -6,6 +6,7 @@ use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Delete;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\Patch;
+use App\Controller\GetFavoriteController;
 use App\Controller\PostLikeController;
 use App\Repository\PostCommentLikeRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -14,9 +15,42 @@ use Symfony\Component\Serializer\Annotation\Groups;
 #[ORM\Entity(repositoryClass: PostCommentLikeRepository::class)]
 #[ApiResource(
     operations: [
-        new Get(),
+        new Get(
+            paginationEnabled: false
+        ),
         new Patch(),
         new Delete(),
+        new Get(
+            uriTemplate: '/post_comment_likes/user/{id}',
+            controller: GetFavoriteController::class,
+            openapiContext: [
+                'summary' => 'Get the collection of likes of a user',
+                'description' => 'Récupérer la liste des favoris',
+                'parameters' => [
+                    [
+                        'name' => 'id',
+                        'in' => 'path',
+                        'required' => true,
+                        'description' => 'ID user',
+                        'schema' => [
+                            'type' => 'integer'
+                        ]
+                    ],
+                    [
+                        'name' => 'page',
+                        'in' => 'query',
+                        'required' => false,
+                        'description' => 'Numéro de la page',
+                        'schema' => [
+                            'type' => 'integer',
+                            'default' => 1
+                        ]
+                    ]
+                ],
+            ],
+            paginationEnabled: true,
+            paginationItemsPerPage: 3,
+        ),
         new \ApiPlatform\Metadata\Post(
             controller: PostLikeController::class,
             openapiContext: [
@@ -27,6 +61,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
     ],
     normalizationContext: ["groups" => ["like:read"]],
     denormalizationContext: ["groups" => ["like:write"]],
+
 )]
 class PostCommentLike
 {

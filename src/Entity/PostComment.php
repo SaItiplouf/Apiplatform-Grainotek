@@ -104,7 +104,7 @@ class PostComment
 
     #[ORM\ManyToOne(inversedBy: 'postComments')]
     #[ORM\JoinColumn(nullable: false)]
-    #[Groups(['comment:write', 'comment:read'])]
+    #[Groups(['comment:write', 'comment:read', 'like:read'])]
     private ?Post $post = null;
 
     #[ORM\Column(length: 255)]

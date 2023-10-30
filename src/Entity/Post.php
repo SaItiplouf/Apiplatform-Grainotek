@@ -88,36 +88,36 @@ class Post
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    #[Groups(['read:Post', 'trade:read', "comment:write", 'trade:write', 'write:Room', 'read:Room', 'comment:read', 'read:Review', 'write:Review'])]
+    #[Groups(['read:Post', 'trade:read', "comment:write", 'trade:write', 'write:Room', 'read:Room', 'comment:read', 'read:Review', 'write:Review', 'like:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
     #[ApiProperty(required: true)]
-    #[Groups(['read:Post', 'trade:read', 'trade:write', "comment:write", 'write:Room', 'read:Room', 'comment:read', 'read:Review', 'write:Review'])]
+    #[Groups(['read:Post', 'trade:read', 'trade:write', "comment:write", 'write:Room', 'read:Room', 'comment:read', 'read:Review', 'write:Review', 'like:read'])]
     private string $name;
 
     #[ORM\ManyToOne(targetEntity: User::class)]
     #[ORM\JoinColumn(name: 'user_id', referencedColumnName: 'id', nullable: false)]
     #[ApiProperty(required: true)]
-    #[Groups(['read:Post', 'trade:write', 'trade:read', "comment:write", 'write:Room'])]
+    #[Groups(['read:Post', 'trade:write', 'trade:read', "comment:write", 'write:Room', 'like:read'])]
     private ?User $user;
 
     #[ORM\Column(length: 255)]
     #[ApiProperty(required: true)]
-    #[Groups(['read:Post', 'trade:read', 'trade:write', "comment:write", 'write:Room'])]
+    #[Groups(['read:Post', 'trade:read', 'trade:write', "comment:write", 'write:Room', 'like:read'])]
     private string $content;
 
     #[ORM\Column(length: 255, nullable: true)]
-    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room'])]
+    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room', 'like:read'])]
     private ?string $location = null;
 
     #[ORM\OneToMany(mappedBy: 'post', targetEntity: PostImage::class, cascade: ['remove'])]
-    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room', 'read:Room', 'read:Review', 'write:Review'])]
+    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room', 'read:Room', 'read:Review', 'write:Review', 'like:read'])]
     private Collection $images;
 
     #[ORM\Column]
     #[ApiProperty(readable: true, writable: false)]
-    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room'])]
+    #[Groups(['read:Post', 'trade:read', 'trade:write', 'write:Room', 'like:read'])]
     private ?DateTimeImmutable $createdAt = null;
 
     #[ORM\OneToMany(mappedBy: 'post', targetEntity: PostComment::class, orphanRemoval: true)]

@@ -2,8 +2,12 @@
 
 namespace App\Repository;
 
+use Doctrine\ORM\Tools\Pagination\Paginator;
+use Doctrine\Common\Collections\Criteria;
 use App\Entity\PostCommentLike;
+use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -16,9 +20,44 @@ use Doctrine\Persistence\ManagerRegistry;
  */
 class PostCommentLikeRepository extends ServiceEntityRepository
 {
+    const ITEMS_PER_PAGE = 3;
+
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, PostCommentLike::class);
+    }
+
+    public function getPaginatedPostCommentLikes(User $user, EntityManagerInterface $em, $page = 1)
+    {
+        $queryBuilder = $em->createQueryBuilder();
+
+        $queryBuilder
+            ->select('COUNT(pcl.id)')
+            ->from(PostCommentLike::class, 'pcl')
+            ->where('pcl.user = :user')
+            ->setParameter('user', $user);
+
+        $totalItems = $queryBuilder->getQuery()->getSingleScalarResult();
+
+        // Calculez le nombre total de pages
+        $totalPages = ceil($totalItems / self::ITEMS_PER_PAGE);
+
+        $firstResult = ($page - 1) * self::ITEMS_PER_PAGE;
+
+        $queryBuilder = $em->createQueryBuilder();
+
+        $queryBuilder
+            ->select('pcl')
+            ->from(PostCommentLike::class, 'pcl')
+            ->where('pcl.user = :user')
+            ->setParameter('user', $user)
+            ->setFirstResult($firstResult)
+            ->setMaxResults(self::ITEMS_PER_PAGE);
+
+        $doctrinePaginator = new Paginator($queryBuilder);
+
+//        return ['data' => $doctrinePaginator, 'totalPages' => $totalPages, 'totalItems' => $totalItems];
+        return $doctrinePaginator;
     }
 
 //    /**

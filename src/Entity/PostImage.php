@@ -81,7 +81,7 @@ class PostImage
     #[ORM\Column(nullable: true)]
     public ?string $filePath = null;
     #[ApiProperty(types: ['https://schema.org/contentUrl'])]
-    #[Groups(['media_object:read', 'read:Post', 'trade:read', 'read:Room'])]
+    #[Groups(['media_object:read', 'read:Post', 'trade:read', 'read:Room', 'like:read'])]
     #[ORM\Column(nullable: true)]
     public ?string $contentUrl = null;
 
@@ -91,7 +91,7 @@ class PostImage
     private ?File $file = null;
 
     #[ORM\Id, ORM\Column, ORM\GeneratedValue]
-    #[Groups(['read:Post'])]
+    #[Groups(['read:Post', 'like:read'])]
     private ?int $id = null;
 
     #[ORM\ManyToOne(targetEntity: Post::class, inversedBy: "images")]
